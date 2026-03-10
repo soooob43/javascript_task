@@ -5,16 +5,26 @@
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #f0f2f5;
+  background: #ededed;
   padding: 24px;
-  max-width: 640px;
+  max-width: 800px;
   margin: 0 auto;
   color: #333;
+  background-image: url("./calender.png");
+  /* 배경 이미지 중앙 정렬 */
+  background-position: center;
+  /* 스크롤 시 배경 고정 (옵션) */
+  background-attachment: fixed;
+  margin-top: 50px;
 }
-header h1 {
+
+header h2 {
   text-align: center;
-  margin-bottom: 24px;
-  font-size: 1.6em;
+  font-weight: 800;
+  font-size: 2rem;
+  border-color: #666;
+  border-radius: 8px;
+  font-color: #ddd;
 }
 
 /* 섹션 카드 */
@@ -53,7 +63,7 @@ select:focus {
   border-color: #4a90d9;
 }
 textarea {
-  height: 80px;
+  height: 100px;
   resize: vertical;
 }
 select {
@@ -66,7 +76,6 @@ button {
   cursor: pointer;
   font-size: 14px;
   font-family: inherit;
-  transition: background 0.15s;
 }
 #submit-btn {
   background: #4a90d9;
